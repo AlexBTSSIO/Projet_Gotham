@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth; /* pour animer la page*/
+    background: #000 url(../asset/asset0.jpg) no-repeat fixed center center / cover;
+    background-size: cover;
 }
 body{
     font: 1.6rem 'poppins' , sans-serif;
     margin: 0;
     color: black;
-    background-color: white;
-    background-image: url(/asset/asset0.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;   
-    
+    text-rendering: optimizeLegibility; 
 }
 h1,h2,h3,h4,h5,h6,p,ul{
     padding: 0rem;
@@ -19,6 +18,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 }
 h1,h2,h3,h4,h5,h6,p,ul, li{
     font-weight: 200;
+    font-family: 'Redressed', cursive;
 }
 img{
     display: inline-block;
@@ -29,6 +29,10 @@ img{
     border-radius: 4rem;
     overflow: hidden;
 }
+a{
+    text-decoration: none;
+    color: #222;
+}
 
 *{box-sizing: border-box;
 }
@@ -37,6 +41,15 @@ img{
     --bgc-secondary:#ffffff;
     --bgc-last: #3d3838;
     --color-text: #222;
+}
+header, nav, main, section,p ,footer{
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+h1, h2{
+    text-transform: capitalize;
 }
 header h1{
     line-height: 9.0rem;
@@ -49,6 +62,8 @@ header h1::before{
     content: url(../asset/logo-de-batman.png);
     vertical-align: 0rem;
     margin-right: 5rem;
+    object-fit: contain;
+
 }
 section h2{
     line-height: 6.0rem;
@@ -57,7 +72,7 @@ section h2{
     color: var(--color-text);
     background-color: var(--bgc-primary);
 }
-main section{
+main {
     max-width: 100rem;
     margin: 5rem auto;
     padding: 1rem;
@@ -67,15 +82,15 @@ main section{
     overflow: hidden;
     
 }
-section h2{
-    line-height: 6.0rem;
-    text-align: left;
-    padding-left: 1rem;
+p{
+    border: #000 1rem solid; /*encadrer texte et arrondir les angles */
+    border-radius: 4rem;
+    overflow: hidden;
 }
-section ul li{
-    width: calc(100%/4);
+ul li{
+    width: calc(100%/4 - 1rem); /*modifier taille de l'image*/
     display: block;
-    float: left;
+    float:right;
     margin: 0 1rem 1rem 0;
 }
 p{
@@ -86,5 +101,5 @@ p{
 
 footer{
     text-align: center;
-    color: #fff;
+    color: #222;
 }
