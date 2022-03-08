@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'poppins' , sans-serif;
+    margin: 0;
+    color: black;
+    background-color: white;
+    background-image: url(/asset/asset0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding: 0rem;
+    margin: 0rem;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul, li{
+    font-weight: 200;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 4rem;
+    overflow: hidden;
+}
+
+*{box-sizing: border-box;
+}
+:root{ /*palette couleur */
+    --bgc-primary: #d3d2d6;
+    --bgc-secondary:#ffffff;
+    --bgc-last: #3d3838;
+    --color-text: #222;
+}
+header h1{
+    line-height: 9.0rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--color-text);
+    background-color: var(--bgc-primary);
+}
+header h1::before{
+    content: url(../asset/logo-de-batman.png);
+    vertical-align: 0rem;
+    margin-right: 5rem;
+}
+section h2{
+    line-height: 6.0rem;
+    text-align: left;
+    padding-left: 1rem;
+    color: var(--color-text);
+    background-color: var(--bgc-primary);
+}
+main section{
+    max-width: 100rem;
+    margin: 5rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--bgc-primary);
+    border-radius: 4rem;
+    overflow: hidden;
+    
+}
+section h2{
+    line-height: 6.0rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+section ul li{
+    width: calc(100%/4);
+    display: block;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+p{
+    line-height: 3rem;
+    text-align: auto;
+    padding:1 rem 0 0 1rem;
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+}
