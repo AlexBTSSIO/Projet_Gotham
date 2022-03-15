@@ -6,7 +6,7 @@ html{
     background-size: cover;
 }
 body{
-    font: 1.6rem 'poppins' , sans-serif;
+    font: 2rem 'poppins', sans-serif;
     margin: 0;
     color: black;
     text-rendering: optimizeLegibility; 
@@ -42,12 +42,24 @@ a{
     --bgc-last: #3d3838;
     --color-text: #222;
 }
-header, nav, main, section,p ,footer{
+header, nav, main, footer{
     max-width: 120rem;
     margin: 0 auto;
     background-color: rgba(255,255,255, 0.8);
 }
-
+header h1, section h2, nav{
+    position: sticky;
+    top: 0;
+}
+nav{
+    max-width: 100rem;
+    margin: 5rem auto;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to bottom, transparent, #ffffff 90%);
+    z-index: -1;
+}
 h1, h2{
     text-transform: capitalize;
 }
@@ -59,11 +71,10 @@ header h1{
     background-color: var(--bgc-primary);
 }
 header h1::before{
-    content: url(../asset/logo-de-batman.png);
-    vertical-align: 0rem;
-    margin-right: 5rem;
+    content: url(../favicon_io/favicon-32x32.png);
+    vertical-align: -0.2rem;
+    margin-right: 2rem;
     object-fit: contain;
-
 }
 section h2{
     line-height: 6.0rem;
@@ -78,20 +89,30 @@ main {
     padding: 1rem;
     text-align: center;
     background-color: var(--bgc-primary);
-    border-radius: 4rem;
-    overflow: hidden;
-    
 }
 p{
-    border: #000 1rem solid; /*encadrer texte et arrondir les angles */
-    border-radius: 4rem;
-    overflow: hidden;
+    border: #000 .2rem solid; /*encadrer texte et arrondir les angles */
+    padding: .8rem;
+}
+main ul{
+    text-align: center;
+    padding-top: 1rem;
 }
 ul li{
-    width: calc(100%/4 - 1rem); /*modifier taille de l'image*/
-    display: block;
-    float:right;
+    width: calc(100%/4 - 1rem - .4rem ); /*modifier taille de l'image*/
+    display: inline-block;
     margin: 0 1rem 1rem 0;
+}
+ul li img{
+    transition-duration: 0.9s;
+}
+
+ul li img:hover{
+    border-radius: 50%;
+    margin-top: auto;
+}
+ul li:last-child{
+    margin: 0;
 }
 p{
     line-height: 3rem;

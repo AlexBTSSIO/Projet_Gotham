@@ -1,7 +1,7 @@
 # LE PROJET GOTHAM
 ![Batman](./asset/asset1.jpg)
 
-[Voir](https://github.com/AlexBTSSIO/Projet_Gotham.git)
+[Voir]( https://alexbtssio.github.io/Projet_Gotham/)
 
 ## Sommaire:
 * 1.Histoire
