@@ -58,7 +58,7 @@ nav{
     position: sticky;
     top: 0;
     background: linear-gradient(to bottom, transparent, #ffffff 90%);
-    z-index: -1;
+    z-index: 0;
 }
 h1, h2{
     text-transform: capitalize;
@@ -80,6 +80,7 @@ section h2{
     line-height: 6.0rem;
     text-align: left;
     padding-left: 1rem;
+    cursor: pointer;
     color: var(--color-text);
     background-color: var(--bgc-primary);
 }
@@ -92,7 +93,9 @@ main {
 }
 p{
     border: #000 .2rem solid; /*encadrer texte et arrondir les angles */
-    padding: .8rem;
+    line-height: 3rem;
+    text-align: auto;
+    padding:1rem 0 0 1rem;
 }
 main ul{
     text-align: center;
@@ -114,12 +117,6 @@ ul li img:hover{
 ul li:last-child{
     margin: 0;
 }
-p{
-    line-height: 3rem;
-    text-align: auto;
-    padding:1 rem 0 0 1rem;
-}
-
 footer{
     text-align: center;
     color: #222;
