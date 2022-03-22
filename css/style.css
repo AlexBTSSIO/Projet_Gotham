@@ -57,7 +57,7 @@ nav{
     padding: 1rem;
     position: sticky;
     top: 0;
-    background: linear-gradient(to bottom, transparent, #ffffff 90%);
+    background: linear-gradient(to left, transparent, #ffffff 90%);
     z-index: 0;
 }
 h1, h2{
@@ -88,13 +88,12 @@ main {
     max-width: 100rem;
     margin: 5rem auto;
     padding: 1rem;
-    text-align: center;
     background-color: var(--bgc-primary);
 }
 p{
     border: #000 .2rem solid; /*encadrer texte et arrondir les angles */
     line-height: 3rem;
-    text-align: auto;
+    text-align: justify;
     padding:1rem 0 0 1rem;
 }
 main ul{
@@ -118,6 +117,6 @@ ul li:last-child{
     margin: 0;
 }
 footer{
-    text-align: center;
+    text-align:center;
     color: #222;
 }
