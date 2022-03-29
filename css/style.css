@@ -104,6 +104,14 @@ ul li{
     width: calc(100%/4 - 1rem - .4rem ); /*modifier taille de l'image*/
     display: inline-block;
     margin: 0 1rem 1rem 0;
+    padding:0rem;
+}
+ul li:nth-child(5),ul li:nth-child(6),ul li:nth-child(7),ul li:nth-child(8){
+    width: calc(100%/4 - 1rem - .4rem ); /*modifier taille de l'image*/
+    height: 30rem ;
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+    padding:0rem;
 }
 ul li img{
     transition-duration: 0.9s;
@@ -113,9 +121,7 @@ ul li img:hover{
     border-radius: 50%;
     margin-top: auto;
 }
-ul li:last-child{
-    margin: 0;
-}
+
 footer{
     text-align:center;
     color: #222;
